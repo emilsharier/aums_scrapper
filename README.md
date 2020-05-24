@@ -7,19 +7,7 @@ You need to have an AUMS account to use this service.
 
 ## Endpoints (POST methods)
 
-**1. Getting name (Totally un-necessary but why not)**
-
-    /getName
-
-You have to pass the following JSON data as the body of the request
-
-    {
-        "username" : "MY.SC.XXXXXXXXXX",
-        "password" : "XXXXXXXXXXXX",
-        "semester" : "<Some value between 1 and 10>"
-    }
-
-**2. Getting attendance status of a particular semester**
+**1. Getting attendance status of a particular semester**
 
     /getAttendance
 
@@ -31,7 +19,7 @@ You have to pass the following JSON data as the body of the request
         "semester" : "<Some value between 1 and 10>"
     }
 
-**3. Getting internal marks (aka internals)**
+**2. Getting internal marks (aka internals)**
 
     /getInternalMarks
 
@@ -41,6 +29,17 @@ You have to pass the following JSON data as the body of the request
         "username" : "MY.SC.XXXXXXXXXX",
         "password" : "XXXXXXXXXXXX",
         "semester" : "<Some value between 1 and 10>"
+    }
+
+**3. Getting name (Totally un-necessary but why not)**
+
+    /getName
+
+You have to pass the following JSON data as the body of the request
+
+    {
+        "username" : "MY.SC.XXXXXXXXXX",
+        "password" : "XXXXXXXXXXXX"
     }
 
 ### How to use
